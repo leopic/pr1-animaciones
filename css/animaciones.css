@@ -1,0 +1,64 @@
+/* Ejemplo 1 */
+/* Cuando inicia la transición. */
+.prueba-fade.ng-enter {
+    opacity: 0;
+    transition: 0.5s linear all;
+}
+
+/* Cuando termina la transición. */
+.prueba-fade.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+/* Ejemplo 2 */
+/* Cuando inicia el proceso de remover un elemento. */
+.list-group-item.ng-leave {
+    opacity: 1;
+    transition: 0.5s linear all;
+}
+
+/* Cuando termina el proceso de remover un elemento. */
+.list-group-item.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+/* Cuando recién se agrega un elemento. */
+.list-group-item.ng-enter {
+    background-color: #eee;
+    color: #000;
+    transition: .5s linear all;
+}
+
+/* Un momento antes de normalizar los estilos de un elemento en la lista. */
+.list-group-item.ng-enter.ng-enter-active {
+    background-color: #fff;
+}
+
+/* Muestra o esconde el botón de remover item. Inicio de la animación */
+.btn.ng-enter {
+    opacity: 0;
+    transition: .5s linear all;
+}
+
+/* Muestra o esconde el botón de remover item. Fin de la animación */
+.btn.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+/* Ejemplo 3 */
+/* Estilos base para el elemento */
+.alert {
+    transition: 0.5s linear all;
+}
+
+/* Cambios cuando se agrega la clase */
+.alert.alert-info-add {
+    background: hotpink;
+    color: #fff;
+}
+
+/* Cambios cuando se remueve la clase */
+.alert.alert-info-remove {
+    background: rebeccapurple;
+    color: #fff;
+}
